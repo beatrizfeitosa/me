@@ -9,13 +9,13 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       {/* Decorative top gradient line */}
       <div style={{ height: 3, background: "linear-gradient(to right, #E8A8B8, #F0C8B0, #E8D8C8)", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }} />
 
       <Navbar />
 
-      <main style={{ maxWidth: 960, margin: "0 auto" }}>
+      <main style={{ maxWidth: 960, margin: "0 auto", width: "100%", flex: 1 }}>
         <Hero />
 
         <div style={{ borderTop: "0.5px solid var(--border-soft)" }}>
@@ -30,12 +30,16 @@ export default function Home() {
           <Languages />
         </div>
 
-        <Writing />
+        <div style={{ borderTop: "0.5px solid var(--border-soft)" }}>
+          <Writing />
+        </div>
 
-        <Contact />
+        <div style={{ borderTop: "0.5px solid var(--border-soft)" }}>
+          <Contact />
+        </div>
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

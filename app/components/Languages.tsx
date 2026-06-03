@@ -7,7 +7,7 @@ export default function Languages() {
   return (
     <section
       style={{
-        padding: "0 clamp(24px, 6vw, 80px) 72px",
+        padding: "72px clamp(24px, 6vw, 80px) 72px",
         maxWidth: 760,
       }}
     >

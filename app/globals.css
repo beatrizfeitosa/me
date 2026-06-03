@@ -26,7 +26,7 @@
   --deco-gradient: linear-gradient(to right, #E8A8B8, #F0C8B0, #E8D8C8);
 }
 
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
