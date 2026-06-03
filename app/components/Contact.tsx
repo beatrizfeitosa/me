@@ -59,7 +59,7 @@ export default function Contact() {
         Contact
       </p>
 
-      <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+      <div className="contact-grid">
         {contacts.map((c) => (
           <a
             key={c.label}
@@ -74,15 +74,13 @@ export default function Contact() {
               display: "flex",
               alignItems: "center",
               gap: 12,
-              flex: 1,
-              minWidth: 160,
               textDecoration: "none",
               transition: "border-color 0.2s",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--degree-accent)")}
             onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--border)")}
           >
-            {c.icon}
+            <span style={{ flexShrink: 0 }}>{c.icon}</span>
             <div>
               <div style={{ fontSize: 11, color: "var(--text-muted)" }}>{c.label}</div>
               <div style={{ fontSize: 12, fontWeight: 500, color: "var(--text-primary)", marginTop: 2 }}>{c.value}</div>
@@ -90,6 +88,21 @@ export default function Contact() {
           </a>
         ))}
       </div>
+      <style>{`
+        .contact-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        @media (min-width: 641px) {
+          .contact-grid {
+            flex-direction: row;
+          }
+          .contact-grid a {
+            flex: 1;
+          }
+        }
+      `}</style>
     </section>
   );
 }

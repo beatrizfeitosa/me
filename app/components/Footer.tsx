@@ -15,7 +15,7 @@ export default function Footer() {
         className="font-serif"
         style={{ fontSize: 14, fontStyle: "italic", color: "#C4A098" }}
       >
-        Beatriz Alves
+        Beatriz Feitosa
       </span>
       <span
         className="font-mono"

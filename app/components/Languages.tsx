@@ -23,7 +23,7 @@ export default function Languages() {
       >
         Languages
       </p>
-      <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+      <div className="lang-grid">
         {languages.map((lang) => (
           <div
             key={lang.name}
@@ -35,8 +35,6 @@ export default function Languages() {
               display: "flex",
               alignItems: "center",
               gap: 14,
-              flex: 1,
-              minWidth: 160,
             }}
           >
             <span style={{ fontSize: 24 }}>{lang.flag}</span>
@@ -62,6 +60,17 @@ export default function Languages() {
           </div>
         ))}
       </div>
+      <style>{`
+        .lang-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        @media (min-width: 641px) {
+          .lang-grid { flex-direction: row; }
+          .lang-grid > div { flex: 1; }
+        }
+      `}</style>
     </section>
   );
 }

@@ -30,7 +30,7 @@ export default function Hero() {
           marginBottom: 10,
         }}
       >
-        Beatriz Alves
+        Beatriz Feitosa
       </h1>
 
       <p

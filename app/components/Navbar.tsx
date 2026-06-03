@@ -54,7 +54,7 @@ export default function Navbar() {
         }}
       >
         <span className="font-serif" style={{ fontSize: 16, fontStyle: "italic", color: "var(--text-primary)" }}>
-          Beatriz Alves
+          Beatriz Feitosa
         </span>
 
         {/* Desktop links */}
