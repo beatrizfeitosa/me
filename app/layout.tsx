@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Beatriz Feitosa · QA Automation Analyst",
+  title: "Beatriz Feitosa",
   description: "QA Automation Analyst with 2+ years of experience building scalable test frameworks with Playwright, Robot Framework, and Selenium.",
 };
 
