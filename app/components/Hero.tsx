@@ -58,6 +58,11 @@ export default function Hero() {
         Playwright, Robot Framework, and Selenium — across web, API, and low-code
         platforms. I love working with test automation and I&apos;m always focused on
         keeping things clean, consistent, and reliable from the start.
+        <br></br><br></br>
+        I have been studying for the CTFL certification while expanding my knowledge in
+        performance testing using Playwright and OctoPerf. I am also highly interested
+        in building AI-powered applications and learning security testing practices
+        to assess the security of applications developed with AI technologies.
       </p>
     </section>
   );
